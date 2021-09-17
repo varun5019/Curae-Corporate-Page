@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <g id="Component_3_5" data-name="Component 3 – 5" transform="translate(47) rotate(90)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="23.5" cy="23.5" r="23.5" fill="#508aff"/>
+    <g id="arrow-down-sign-to-navigate" transform="translate(27.5 15.627) rotate(90)">
+      <path id="Path_1" data-name="Path 1" d="M7.873,8.976a1.1,1.1,0,0,1-.78-.323L.323,1.882A1.1,1.1,0,0,1,1.882.323L7.873,6.314,13.864.323a1.1,1.1,0,0,1,1.559,1.56L8.653,8.653A1.1,1.1,0,0,1,7.873,8.976Z" transform="translate(0 0)" fill="#f8f9fa"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,176 @@
+:root{
+    --head : #F8F9FA;
+    --primary : #508AFF;
+    --heading : #565656;
+    --text : #707070;
+    --focus : #3B3B3B;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------ Navbar -------------------------------------*/
+#navbar{
+    padding-left: 60px;
+    height: 10vh;
+    background-color: var(--head);
+}
+
+#navbar .nav-link{
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+#navbarNav{
+    margin-left: 25%;
+    background-color: var(--head);
+}
+
+#navbar #cta{
+    margin-left: 55%;
+    border: 2px solid var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+    font-weight: 600;
+}
+/* ------------------- Main ----------- */
+
+#main{
+    margin-top: 140px;
+    padding: 0 15em 4em 15em;
+}
+
+#main h1{
+    font-weight: 600;
+    color: var(--heading);
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+#main p{
+    color: var(--text);
+    text-align: center;
+    padding: 2em;
+}
+#main .vid{
+    height: 400px;
+    width: 100%;
+    background-color: #ECF3FF;
+}
+
+/* ----------------- Faq ------------------*/
+
+#faq{
+    /* margin-top: 140px; */
+    padding: 0 15em;
+    padding-bottom: 5em;
+}
+
+#faq h1{
+    font-weight: 600;
+    color: var(--heading);
+    text-align: center;
+    padding: 1.2em;
+    line-height: 1.5em;
+}
+
+#faq .ques{
+    margin-bottom: 1.5em;
+}
+
+#faq .ques .accordion #drop{
+    display: none;
+}
+
+#faq .accordion {
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+    padding: 1em 2em;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    /* transition: 0.4s; */
+  }
+  
+ #faq .active, .accordion:hover {
+    background-color: #ECF3FF; 
+    border-radius: 8px 8px 0 0;
+    border: none;
+    color: var(--primary);
+  }
+  
+ #faq .panel {
+    display: none;
+    background-color: #ECF3FF;
+    color: var(--primary);
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    padding: 0.5em 5em;
+  }
+  #faq .panel p{
+      font-weight: 400;
+  }
+  
+/*-------------------Footer-------------------------*/
+
+#footer {
+    padding-top: 4em;
+    background-color: var(--head);
+    color: var(--heading);
+}
+
+
+#footer .footer_links ul{
+    margin-bottom: 1em;
+}
+
+#footer .footer_links li{
+    list-style: none;
+    margin-bottom: 1em;
+}
+#footer .footer_links a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 16px;
+}
+
+#footer .footer_links a:hover{
+    color: var(--heading);
+}
+
+#footer hr{
+    height: 1.5px;
+}
+
+#footer .f_copy p{
+    font-size: 16px;
+}
+
+#footer .f_social{
+    /* justify-content: right; */
+    text-align: right;
+}
+
+#footer .f_social img{
+    height: 30px;
+    width: 30px;
+    margin: 0 0.5em;
+}
+
+#ac{
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+#copy{
+    margin-left: 3em;
+}
+
+#name{
+    font-weight: 600;
+}
