@@ -74,7 +74,7 @@
         <img src="./public/images/index/Memory storage-bro.png">
       </div>
       <div class="col-sm-12 col-md-6 left-content">
-        <h1>Storing records made easier</h1>
+        <h1>Seamless User Interface</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
           do eiusmod tempor incididunt ut labore et dolore magna 
@@ -94,7 +94,7 @@
   <section id="sec-3">
     <div class="row f1">
       <div class="col-sm-12 col-md-6 left-content">
-        <h1>Storing records made easier</h1>
+        <h1>Conviniently schedule appointments</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
           do eiusmod tempor incididunt ut labore et dolore magna 
@@ -120,7 +120,7 @@
         <img src="./public/images/index/Memory storage-bro.png">
       </div>
       <div class="col-sm-12 col-md-6 left-content">
-        <h1>Storing records made easier</h1>
+        <h1>Accept and manage appointments</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
           do eiusmod tempor incididunt ut labore et dolore magna 
@@ -137,6 +137,133 @@
     </div>
   </section>
 
+  <section id="faq">
+    <h1>Frequently Asked Questions</h1>
+    <div class="q_section">
+        <div class="ques">
+            <button class="accordion">
+                <div class="row">
+                    <div class="col-1">Q1</div>
+                    <div class="col-9">Would I be able to cancel appointments after booking?</div>
+                    <div class="col-1">
+                      <img src="./public/images/faq/dropdown_caret.svg" alt="" id="drop">
+                      <img src="./public/images/faq/caret.svg" alt="" id="normal">
+                    </div>
+                </div>
+            </button>
+            <div class="panel">
+                <p>Yes, you will be able to cancel your booked appointments.</p>
+            </div>
+        </div>
+        <div class="ques">
+            <button class="accordion-2">
+                <div class="row">
+                    <div class="col-1">Q2</div>
+                    <div class="col-9">Where do I find the doctors section?</div>
+                    <div class="col-1">
+                      <img src="./public/images/faq/caret.svg" alt="" id="normal-1">
+                      <img src="./public/images/faq/dropdown_caret.svg" alt="" id="drop-1" style="display:none">
+                    </div>
+                    
+                </div>
+            </button>
+            <div class="panel">
+                <p>The navigation bar holds the different sections. Click on the one labeled "doctor".</p>
+            </div>
+        </div>
+        <div class="ques">
+            <button class="accordion-3">
+                <div class="row">
+                    <div class="col-1">Q3</div>
+                    <div class="col-9">How do I upload my documents on the app?</div>
+                    <div class="col-1">
+                      <img src="./public/images/faq/dropdown_caret.svg" alt="" id="drop-2"  style="display:none">
+                      <img src="./public/images/faq/caret.svg" alt="" id="normal-2">
+                    </div>
+
+                </div>
+            </button>
+            <div class="panel">
+                <p>Scan your documents and once converted to a suitable format (pdf/png/jpeg) it can be uploaded on your profile</p>
+            </div>
+        </div>
+    </div>
+    <h1>Appointment booking made easy through our <span style="color: #508AFF;">Android</span> App</h1>
+    <div class="immg">
+    
+      <img src="./public/images/index/gp.png" alt="Google Play" style="height: 4em; width: 14em; align-content: center; margin-bottom : 50px;">
+    </div>
+</section>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    console.log(acc)
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+                document.getElementById('normal').style.display = "block"
+                document.getElementById('drop').style.display = "none"
+
+            } else {
+                panel.style.display = "block";
+                document.getElementById('normal').style.display = "none"
+                document.getElementById('drop').style.display = "block"
+            }
+        });
+    }
+</script>
+<!--Accordian 2-->
+<script>
+  var acc1 = document.getElementsByClassName("accordion-2");
+  console.log(acc1)
+  var i;
+
+  for (i = 0; i < acc1.length; i++) {
+      acc1[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel2 = this.nextElementSibling;
+          if (panel2.style.display === "block") {
+              panel2.style.display = "none";
+              document.getElementById('normal-1').style.display = "block"
+              document.getElementById('drop-1').style.display = "none"
+
+          } else {
+              panel2.style.display = "block";
+              document.getElementById('normal-1').style.display = "none"
+              document.getElementById('drop-1').style.display = "block"
+          }
+      });
+  }
+</script>
+<!--Accordian 3-->
+<script>
+  var acc2 = document.getElementsByClassName("accordion-3");
+  console.log(acc2)
+  var i;
+
+  for (i = 0; i < acc2.length; i++) {
+      acc2[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel3 = this.nextElementSibling;
+          if (panel3.style.display === "block") {
+              panel3.style.display = "none";
+              document.getElementById('normal-2').style.display = "block"
+              document.getElementById('drop-2').style.display = "none"
+
+          } else {
+              panel3.style.display = "block";
+              document.getElementById('normal-2').style.display = "none"
+              document.getElementById('drop-2').style.display = "block"
+          }
+      });
+  }
+</script>
+
   <section id="footer">
     <div class="container" style="margin-bottom: 2em;">
         <div class="row">
@@ -145,22 +272,22 @@
                 <li><a href="#" id="ac">Curaae</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
             <div class="col-lg-3 col-md-3 col-sm-12 footer_links">
                 <ul>
                     <li><a href="#" id="ac">For Doctors</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="./faq.html">FAQs</a></li>
                     <li><a href="#">Curaae Profile</a></li>
                     <li><a href="#">How to use</a></li>
-                    <li><a href="#">Get In Touch</a></li>
+                    <li><a href="./contact.html">Get In Touch</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 footer_links">
               <ul>
-                  <li><a href="#" id="ac">For Patients</a></li>
-                  <li><a href="#">FAQs</a></li>
+                  <li><a href="" id="ac">For Patients</a></li>
+                  <li><a href="./faq.html">FAQs</a></li>
                   <li><a href="#">Patient App</a></li>
                   <li><a href="#">How to use</a></li>
                   <li><a href="#">Report Issue</a></li>

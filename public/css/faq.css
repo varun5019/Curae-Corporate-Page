@@ -37,8 +37,8 @@ body{
 /* ----------------- Faq ------------------*/
 
 #faq{
-    margin-top: 140px;
     padding: 0 10em;
+    margin-top:150px;
 }
 
 #faq h1{
@@ -79,14 +79,212 @@ body{
     color: var(--primary);
   }
   
+
+  /* Accordian 2 */
+
+  #faq .accordion-2 {
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+    padding: 1em 2em;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    /* transition: 0.4s; */
+  }
+  
+ #faq .active, .accordion-2:hover {
+    background-color: #ECF3FF; 
+    border-radius: 8px 8px 0 0;
+    border: none;
+    color: var(--primary);
+  }
+
+  /* Accordain 3 */
+  #faq .accordion-3 {
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+    padding: 1em 2em;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    /* transition: 0.4s; */
+  }
+  
+ #faq .active, .accordion-3:hover {
+    background-color: #ECF3FF; 
+    border-radius: 8px 8px 0 0;
+    border: none;
+    color: var(--primary);
+  }
+
+
  #faq .panel {
     display: none;
     background-color: #ECF3FF;
     color: var(--primary);
     overflow: hidden;
     border-radius: 0 0 8px 8px;
-    padding: 0.5em 5em;
+    padding: 0em 8.7em;
   }
   #faq .panel p{
       font-weight: 400;
   }
+
+  #faq .immg{
+    text-align: center;
+  }
+
+
+  /*-------------------Footer-------------------------*/
+
+#footer {
+    padding-top: 4em;
+    background-color: var(--head);
+    color: var(--heading);
+}
+
+
+#footer .footer_links ul{
+    margin-bottom: 1em;
+}
+
+#footer .footer_links li{
+    list-style: none;
+    margin-bottom: 1em;
+}
+#footer .footer_links a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 16px;
+}
+
+#footer .footer_links a:hover{
+    color: var(--heading);
+}
+
+#footer hr{
+    height: 1.5px;
+}
+
+#footer .f_copy p{
+    font-size: 16px;
+}
+
+#footer .f_social{
+    /* justify-content: right; */
+    text-align: right;
+}
+
+#footer .f_social img{
+    height: 30px;
+    width: 30px;
+    margin: 0 0.5em;
+}
+
+#ac{
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+#copy{
+    margin-left: 3em;
+}
+
+#name{
+    font-weight: 600;
+}
+
+
+
+/*-----------------Media Queries ------------------*/
+@media screen and (max-width : 754px){
+    #footer{
+        margin-top: 80px;
+    }
+    #footer .footer_links{
+        margin-top: 30px;
+    }
+
+    #faq .accordion {
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+        width: 100%;
+        padding: 1em 1.5em;
+        border: 1px solid #DADCE0;
+        border-radius: 8px;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        font-weight: 600;
+        /* transition: 0.4s; */
+      }
+      #faq .accordion-2 {
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+        width: 100%;
+        padding: 1em 1.5em;
+        border: 1px solid #DADCE0;
+        border-radius: 8px;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        font-weight: 600;
+        /* transition: 0.4s; */
+      }
+      #faq .accordion-3 {
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+        width: 100%;
+        padding: 1em 1.5em;
+        border: 1px solid #DADCE0;
+        border-radius: 8px;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        font-weight: 600;
+        /* transition: 0.4s; */
+      }
+
+      #faq{
+        padding: 0 2em;
+        margin-top: 100px;
+    }
+
+    #faq img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #faq h1{
+        font-size: 1.5em;
+        text-align: left;
+        margin-left: -1em;;
+    }
+    #faq .immg{
+        text-align: left;
+      }
+    
+    
+ #faq .panel {
+    display: none;
+    background-color: #ECF3FF;
+    color: var(--primary);
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    padding: 1em 3em;
+  }
+    
+}

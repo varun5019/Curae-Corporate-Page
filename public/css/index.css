@@ -201,6 +201,116 @@ body{
     }
 }
 
+
+/* ----------------- Faq ------------------*/
+
+#faq{
+    padding: 0 10em;
+}
+
+#faq h1{
+    font-weight: 600;
+    color: var(--heading);
+    text-align: center;
+    padding: 1em;
+    line-height: 1.5em;
+}
+
+#faq .ques{
+    margin-bottom: 1.5em;
+}
+
+#faq .ques .accordion #drop{
+    display: none;
+}
+
+#faq .accordion {
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+    padding: 1em 2em;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    /* transition: 0.4s; */
+  }
+  
+ #faq .active, .accordion:hover {
+    background-color: #ECF3FF; 
+    border-radius: 8px 8px 0 0;
+    border: none;
+    color: var(--primary);
+  }
+  
+
+  /* Accordian 2 */
+
+  #faq .accordion-2 {
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+    padding: 1em 2em;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    /* transition: 0.4s; */
+  }
+  
+ #faq .active, .accordion-2:hover {
+    background-color: #ECF3FF; 
+    border-radius: 8px 8px 0 0;
+    border: none;
+    color: var(--primary);
+  }
+
+  /* Accordain 3 */
+  #faq .accordion-3 {
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+    padding: 1em 2em;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    /* transition: 0.4s; */
+  }
+  
+ #faq .active, .accordion-3:hover {
+    background-color: #ECF3FF; 
+    border-radius: 8px 8px 0 0;
+    border: none;
+    color: var(--primary);
+  }
+
+
+ #faq .panel {
+    display: none;
+    background-color: #ECF3FF;
+    color: var(--primary);
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    padding: 0em 8.7em;
+  }
+  #faq .panel p{
+      font-weight: 400;
+  }
+
+  #faq .immg{
+    text-align: center;
+  }
+
 @media screen and (max-width : 754px){
     .f1{
         display: flex;
@@ -214,9 +324,11 @@ body{
     }
     #main{
         padding: 2.5em;
+        margin-top: 100px;
     }
     #sec-2{
         padding: 2.5em;
+        margin-top: 100px;
     }
     #sec-2 .right-content{
         margin-top: 140px;;
@@ -230,9 +342,82 @@ body{
     }
 
     #footer{
-        margin-top: 350px;
+        margin-top: 80px;
     }
     #footer .footer_links{
         margin-top: 30px;
     }
+
+    #faq .accordion {
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+        width: 100%;
+        padding: 1em 1.5em;
+        border: 1px solid #DADCE0;
+        border-radius: 8px;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        font-weight: 600;
+        /* transition: 0.4s; */
+      }
+      #faq .accordion-2 {
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+        width: 100%;
+        padding: 1em 1.5em;
+        border: 1px solid #DADCE0;
+        border-radius: 8px;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        font-weight: 600;
+        /* transition: 0.4s; */
+      }
+      #faq .accordion-3 {
+        background-color: transparent;
+        color: var(--text);
+        cursor: pointer;
+        width: 100%;
+        padding: 1em 1.5em;
+        border: 1px solid #DADCE0;
+        border-radius: 8px;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        font-weight: 600;
+        /* transition: 0.4s; */
+      }
+
+      #faq{
+        padding: 0 2em;
+        margin-top: 320px;
+    }
+
+    #faq img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #faq h1{
+        font-size: 1.5em;
+        text-align: left;
+        margin-left: -1em;;
+    }
+    #faq .immg{
+        text-align: left;
+      }
+    
+    
+ #faq .panel {
+    display: none;
+    background-color: #ECF3FF;
+    color: var(--primary);
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+    padding: 1em 3em;
+  }
+    
 }
