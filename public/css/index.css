@@ -1,6 +1,7 @@
 :root{
     --head : #F8F9FA;
     --primary : #508AFF;
+    --new : #1d68ff;
     --heading : #565656;
     --text : #707070;
     --focus : #3B3B3B;
@@ -10,36 +11,44 @@ body{
 }
 
 /* ------------ Navbar -------------------------------------*/
-#navbar{
-    padding-left: 60px;
-    height: 10vh;
-    background-color: var(--head);
+#n-bar .naav{
+    padding: 1em 13em;
 }
-
-#navbar .nav-link{
+#n-bar .log{
+    font-weight: 700;
+}
+#n-bar .lin{
+    margin-left: 20%;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+#n-bar .liin{
+    margin-left: 60px;;
+}
+#n-bar .ac{
+    color:var(--primary);
     font-weight: 600;
-    margin-left: 50px;
 }
-
-#navbarNav{
-    margin-left: 25%;
-    background-color: var(--head);
-}
-
-#navbar #cta{
-    margin-left: 55%;
-    border: 2px solid var(--primary);
+#n-bar .btts{
+    padding: -0.2em 0.2em;
+    height: 5vh;
     background-color: transparent;
+    border: 2px solid var(--primary);
     color: var(--primary);
     font-weight: 600;
+    margin-top: -10px;
 }
-
-
-
+#n-bar .btts:focus{
+    box-shadow: none;
+}
+#n-bar .btts:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
 
 /*------- Main Section -------------*/
 #main{
-    padding: 5em;
+    padding: 5em 8em;
     height: 90vh;
     overflow: none;
 }
@@ -90,17 +99,29 @@ body{
     padding-bottom: 10px;
     font-weight: 600;
 }
+
+.bmain:hover{
+    margin-left: 20px;
+    border: 2px solid var(--new);
+    background-color: var(--new);
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
 /*---------------------Section 2 ------------------------*/
 
 #sec-2{
-    padding: 5em;
+    padding: 5em 8em;
     height: 90vh;
     overflow: none;
 }
 
 #sec-2 .right-content img{
-    height:80%;
-    width: 80%;
+    height:400px;
+    width: 400px;
 }
 
 #sec-2 .left-content{
@@ -110,14 +131,15 @@ body{
 
 /*---------------------Section 3------------------------*/
 #sec-3{
-    padding: 5em;
+    padding: 5em 8em;
     overflow: none;
     background-color: var(--head);
 }
 
 #sec-3 .right-content img{
-    height:80%;
-    width: 80%;
+    height:400px;
+    width: 400px;
+    margin-left: 150px;;
 }
 #sec-3 .left-content{
     margin-top: 50px;;
@@ -184,22 +206,7 @@ body{
 
 /* ------------------------- Media Queries -------------------*/
 
-@media screen and (max-width : 1026px){
-    #navbar .nav-link{
-        margin-top: 30px;
-        margin-left: 0;
-    }
 
-    #navbarNav{
-        margin-left: 0;
-        width: 100%;
-    }
-
-    #navbar #cta{
-        margin-top: 30px;
-        margin-left: 0;
-    }
-}
 
 
 /* ----------------- Faq ------------------*/
@@ -311,6 +318,40 @@ body{
     text-align: center;
   }
 
+
+/*---------------- Media Queries -------------------------*/
+@media screen and (max-width: 960px){
+    #n-bar .naav{
+        padding: 1em 3em;
+    }
+    
+    #n-bar .lin{
+        margin-left: 0%;;
+        white-space: nowrap;
+    }
+    #n-bar .liin{
+        margin-left: 0px;;
+        margin-top: 10px;;
+    }
+    #n-bar .ac{
+        color: var(--primary);
+        font-weight: 600;
+    }
+    #n-bar .btts{
+        padding: -0.2em 0.2em;
+        height: 5vh;
+        background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    }
+    #n-bar .btts:focus{
+        box-shadow: none;
+    }
+
+}
+
+
 @media screen and (max-width : 754px){
     .f1{
         display: flex;
@@ -340,7 +381,11 @@ body{
         padding: 2.5em;
         margin-top:350px;
     }
-
+    #sec-3 .right-content img{
+        height:300px;
+        width: 300px;
+        margin-left: 0px;;
+    }
     #footer{
         margin-top: 80px;
     }

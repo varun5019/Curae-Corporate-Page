@@ -10,28 +10,39 @@ body{
 }
 
 /* ------------ Navbar -------------------------------------*/
-#navbar{
-    padding-left: 60px;
-    height: 10vh;
-    background-color: var(--head);
+#n-bar .naav{
+    padding: 1em 13em;
 }
-
-#navbar .nav-link{
+#n-bar .log{
+    font-weight: 700;
+}
+#n-bar .lin{
+    margin-left: 20%;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+#n-bar .liin{
+    margin-left: 60px;;
+}
+#n-bar .ac{
+    color:var(--primary);
     font-weight: 600;
-    margin-left: 50px;
 }
-
-#navbarNav{
-    margin-left: 25%;
-    background-color: var(--head);
-}
-
-#navbar #cta{
-    margin-left: 55%;
-    border: 2px solid var(--primary);
+#n-bar .btts{
+    padding: -0.2em 0.2em;
+    height: 5vh;
     background-color: transparent;
+    border: 2px solid var(--primary);
     color: var(--primary);
     font-weight: 600;
+    margin-top: -10px;
+}
+#n-bar .btts:focus{
+    box-shadow: none;
+}
+#n-bar .btts:hover{
+    background-color: var(--primary);
+    color: #fff;
 }
 
 /* ------------------- Main ----------- */
@@ -131,4 +142,45 @@ body{
 
 #name{
     font-weight: 600;
+}
+
+/*---------------- Media Queries -------------------------*/
+@media screen and (max-width: 960px){
+    #n-bar .naav{
+        padding: 1em 3em;
+    }
+    
+    #n-bar .lin{
+        margin-left: 0%;;
+        white-space: nowrap;
+    }
+    #n-bar .liin{
+        margin-left: 0px;;
+        margin-top: 10px;;
+    }
+    #n-bar .ac{
+        color: var(--primary);
+        font-weight: 600;
+    }
+    #n-bar .btts{
+        padding: -0.2em 0.2em;
+        height: 5vh;
+        background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    }
+    #n-bar .btts:focus{
+        box-shadow: none;
+    }
+
+}
+
+
+@media screen and (max-width : 754px){
+    
+    #main{
+        margin-top: 140px;
+        padding: 0 2em 4em 2em;
+    }
 }
